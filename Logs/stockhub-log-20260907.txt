@@ -1,0 +1,1082 @@
+2026-09-07 16:26:49.929 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 16:26:50.320 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 16:26:50.321 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 16:26:50.454 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 16:26:50.456 +03:00 [INF] Hosting environment: Development
+2026-09-07 16:26:50.458 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 16:26:51.350 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 16:26:52.165 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 823.5378ms
+2026-09-07 16:26:52.215 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 16:26:52.215 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 16:26:52.247 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 31.4628ms
+2026-09-07 16:26:52.478 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 263.1651ms
+2026-09-07 16:26:52.519 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 16:26:52.539 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 19.3018ms
+2026-09-07 16:27:01.832 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 16:27:02.346 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 16:27:02.427 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 16:27:03.645 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 16:27:03.698 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 1246.6807ms
+2026-09-07 16:27:03.718 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 16:27:03.722 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 1889.0551ms
+2026-09-07 16:27:03.886 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 16:27:04.228 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 16:27:04.266 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 16:27:07.979 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 16:27:08.011 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 3741.5958ms
+2026-09-07 16:27:08.020 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 16:27:08.062 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 4175.8644ms
+2026-09-07 16:28:17.689 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:28:17.701 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:28:17.714 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:28:17.737 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:28:17.748 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 27.8275ms
+2026-09-07 16:28:17.752 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:28:17.756 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 67.1561ms
+2026-09-07 16:28:20.617 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:28:20.625 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:28:20.631 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:28:20.660 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:28:20.675 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 34.5203ms
+2026-09-07 16:28:20.685 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:28:20.692 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 75.6737ms
+2026-09-07 16:28:22.037 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:28:22.040 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:28:22.042 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:28:22.054 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:28:22.058 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 12.3834ms
+2026-09-07 16:28:22.062 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:28:22.066 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 28.3526ms
+2026-09-07 16:28:23.126 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:28:23.131 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:28:23.137 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:28:23.170 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:28:23.181 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 32.7545ms
+2026-09-07 16:28:23.190 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:28:23.200 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 73.7750ms
+2026-09-07 16:28:24.100 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:28:24.103 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:28:24.106 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:28:24.122 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:28:24.132 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 21.8384ms
+2026-09-07 16:28:24.141 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:28:24.145 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 45.5509ms
+2026-09-07 16:28:25.412 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:28:25.417 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:28:25.421 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:28:25.438 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:28:25.443 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 14.652ms
+2026-09-07 16:28:25.445 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:28:25.448 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 35.9484ms
+2026-09-07 16:28:26.612 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:28:26.615 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:28:26.617 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:28:26.626 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:28:26.633 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 14.1238ms
+2026-09-07 16:28:26.639 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:28:26.641 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 29.0364ms
+2026-09-07 16:28:28.168 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:28:28.171 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:28:28.175 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:28:28.187 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:28:28.190 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 11.211ms
+2026-09-07 16:28:28.197 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:28:28.202 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 33.8171ms
+2026-09-07 16:31:18.320 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 16:31:18.922 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 16:31:18.936 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 16:31:19.014 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 16:31:19.017 +03:00 [INF] Hosting environment: Development
+2026-09-07 16:31:19.019 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 16:31:19.613 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 16:31:19.921 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 311.3217ms
+2026-09-07 16:31:19.926 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 16:31:19.926 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 16:31:19.943 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 17.6791ms
+2026-09-07 16:31:20.013 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 86.9899ms
+2026-09-07 16:31:20.043 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 16:31:20.049 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.7872ms
+2026-09-07 16:31:31.590 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 16:31:32.049 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 16:31:32.104 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 16:31:32.741 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 16:31:32.765 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 647.5696ms
+2026-09-07 16:31:32.779 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 16:31:32.781 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 1191.5052ms
+2026-09-07 16:31:34.086 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 16:31:34.099 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 16:31:34.102 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 16:31:34.109 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 16:31:34.112 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 6.272ms
+2026-09-07 16:31:34.115 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 16:31:34.118 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 31.7854ms
+2026-09-07 16:31:34.185 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 16:31:34.510 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 16:31:34.541 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 16:31:40.478 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 16:31:40.520 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 5975.853ms
+2026-09-07 16:31:40.528 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 16:31:40.554 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 6368.7687ms
+2026-09-07 16:31:47.122 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:31:47.126 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:31:47.140 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:31:47.167 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:31:47.178 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 31.0098ms
+2026-09-07 16:31:47.181 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:31:47.184 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 61.2650ms
+2026-09-07 16:31:51.142 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:31:51.145 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:31:51.148 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:31:51.158 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:31:51.162 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 11.6833ms
+2026-09-07 16:31:51.164 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:31:51.166 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 23.9468ms
+2026-09-07 16:31:52.536 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:31:52.539 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:31:52.543 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:31:52.557 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:31:52.561 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 13.827ms
+2026-09-07 16:31:52.563 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:31:52.566 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 29.7752ms
+2026-09-07 16:31:54.109 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:31:54.112 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:31:54.118 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:31:54.134 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:31:54.139 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 13.2687ms
+2026-09-07 16:31:54.141 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:31:54.143 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 34.3417ms
+2026-09-07 16:31:59.419 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:31:59.421 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:31:59.424 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:31:59.433 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:31:59.437 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 9.7119ms
+2026-09-07 16:31:59.439 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:31:59.440 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 21.2054ms
+2026-09-07 16:32:02.640 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:32:02.643 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:02.645 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:32:02.656 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:32:02.661 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 13.0657ms
+2026-09-07 16:32:02.663 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:02.666 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 25.8258ms
+2026-09-07 16:32:03.267 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:32:03.270 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:03.275 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:32:03.293 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:32:03.301 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 19.6486ms
+2026-09-07 16:32:03.306 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:03.309 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 42.4301ms
+2026-09-07 16:32:03.764 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:32:03.768 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:03.772 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:32:03.785 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:32:03.790 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 13.3543ms
+2026-09-07 16:32:03.792 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:03.794 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 29.7623ms
+2026-09-07 16:32:04.370 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:32:04.373 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:04.377 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:32:04.390 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:32:04.393 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 12.6385ms
+2026-09-07 16:32:04.396 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:04.397 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 27.4547ms
+2026-09-07 16:32:04.723 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:32:04.726 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:04.729 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:32:04.745 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:32:04.750 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 18.059ms
+2026-09-07 16:32:04.754 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:04.756 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 33.3520ms
+2026-09-07 16:32:05.033 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:32:05.036 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:05.040 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:32:05.053 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:32:05.057 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 13.6035ms
+2026-09-07 16:32:05.059 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:05.061 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 28.0839ms
+2026-09-07 16:32:05.380 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:32:05.383 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:05.385 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:32:05.404 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:32:05.411 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 18.9311ms
+2026-09-07 16:32:05.414 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:05.430 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 50.8255ms
+2026-09-07 16:32:05.690 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:32:05.692 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:05.697 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:32:05.710 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:32:05.715 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 12.9703ms
+2026-09-07 16:32:05.717 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:05.720 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 30.5213ms
+2026-09-07 16:32:06.044 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:32:06.051 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:06.055 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:32:06.076 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:32:06.083 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 19.7437ms
+2026-09-07 16:32:06.088 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:06.091 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 47.5657ms
+2026-09-07 16:32:06.370 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:32:06.373 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:06.375 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:32:06.387 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:32:06.392 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 13.0658ms
+2026-09-07 16:32:06.395 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:06.398 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 27.9963ms
+2026-09-07 16:32:06.678 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:32:06.681 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:06.684 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:32:06.693 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:32:06.698 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 10.7269ms
+2026-09-07 16:32:06.700 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:06.702 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 23.5287ms
+2026-09-07 16:32:07.004 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:32:07.006 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:07.008 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:32:07.018 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:32:07.022 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 9.8589ms
+2026-09-07 16:32:07.024 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:07.026 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 22.2108ms
+2026-09-07 16:32:09.111 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:32:09.114 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:09.117 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:32:09.129 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:32:09.133 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 11.6539ms
+2026-09-07 16:32:09.135 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:32:09.137 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 26.0155ms
+2026-09-07 16:41:23.978 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 16:41:24.507 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 16:41:24.509 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 16:41:24.573 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 16:41:24.574 +03:00 [INF] Hosting environment: Development
+2026-09-07 16:41:24.576 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 16:41:25.085 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 16:41:25.490 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 409.0941ms
+2026-09-07 16:41:25.493 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 16:41:25.493 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 16:41:25.510 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 16.9570ms
+2026-09-07 16:41:25.581 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 87.3910ms
+2026-09-07 16:41:25.612 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 16:41:25.620 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.4419ms
+2026-09-07 16:41:28.262 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 16:41:28.638 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 16:41:28.736 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 16:41:29.715 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 16:41:29.752 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 996.6919ms
+2026-09-07 16:41:29.770 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 16:41:29.774 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 1512.7645ms
+2026-09-07 16:41:29.857 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 16:41:30.258 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 16:41:30.297 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 16:41:33.738 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 16:41:33.760 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 3454.1624ms
+2026-09-07 16:41:33.767 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 16:41:33.785 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 3927.8392ms
+2026-09-07 16:41:38.163 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:41:38.171 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:41:38.179 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:41:38.193 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:41:38.198 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 15.3684ms
+2026-09-07 16:41:38.201 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:41:38.204 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 40.2075ms
+2026-09-07 16:41:40.440 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun/6a9d43a082031eb44a69ffba - -
+2026-09-07 16:41:40.444 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.IdyeGoreUrunGetir (StockHub.Services)'
+2026-09-07 16:41:40.460 +03:00 [INF] Route matched with {action = "IdyeGoreUrunGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IdyeGoreUrunGetir(System.String) on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:41:40.899 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.ProductDtos.UrunGetirDto'.
+2026-09-07 16:41:40.906 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.IdyeGoreUrunGetir (StockHub.Services) in 439.9174ms
+2026-09-07 16:41:40.909 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.IdyeGoreUrunGetir (StockHub.Services)'
+2026-09-07 16:41:40.912 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun/6a9d43a082031eb44a69ffba - - - 200 - application/json;+charset=utf-8 471.3619ms
+2026-09-07 16:41:43.535 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:41:43.538 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:41:43.540 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:41:43.551 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:41:43.555 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 12.2077ms
+2026-09-07 16:41:43.558 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:41:43.560 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 25.1753ms
+2026-09-07 16:41:47.220 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun/6a9d441182031eb44a69ffbb - -
+2026-09-07 16:41:47.223 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.IdyeGoreUrunGetir (StockHub.Services)'
+2026-09-07 16:41:47.225 +03:00 [INF] Route matched with {action = "IdyeGoreUrunGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IdyeGoreUrunGetir(System.String) on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:41:47.241 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.ProductDtos.UrunGetirDto'.
+2026-09-07 16:41:47.245 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.IdyeGoreUrunGetir (StockHub.Services) in 16.3248ms
+2026-09-07 16:41:47.248 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.IdyeGoreUrunGetir (StockHub.Services)'
+2026-09-07 16:41:47.251 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun/6a9d441182031eb44a69ffbb - - - 200 - application/json;+charset=utf-8 31.6072ms
+2026-09-07 16:41:51.875 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:41:51.878 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:41:51.881 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:41:51.891 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:41:51.895 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 11.2502ms
+2026-09-07 16:41:51.898 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:41:51.900 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 24.0647ms
+2026-09-07 16:44:01.314 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 16:44:01.345 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 16:44:01.348 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 16:44:01.376 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 16:44:01.382 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 30.7573ms
+2026-09-07 16:44:01.388 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 16:44:01.393 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 79.2160ms
+2026-09-07 16:46:43.546 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:46:43.576 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:46:43.580 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:46:43.599 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:46:43.603 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 16.5261ms
+2026-09-07 16:46:43.605 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:46:43.608 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 80.9257ms
+2026-09-07 16:50:14.680 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 16:50:15.093 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 16:50:15.095 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 16:50:15.157 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 16:50:15.159 +03:00 [INF] Hosting environment: Development
+2026-09-07 16:50:15.161 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 16:50:15.886 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 16:50:16.334 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 454.0582ms
+2026-09-07 16:50:16.344 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 16:50:16.344 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 16:50:16.367 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 22.8832ms
+2026-09-07 16:50:16.470 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 125.9169ms
+2026-09-07 16:50:16.508 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 16:50:16.517 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.4888ms
+2026-09-07 16:50:19.040 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 16:50:19.481 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 16:50:19.618 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 16:50:20.754 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 16:50:20.854 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 1184.481ms
+2026-09-07 16:50:20.903 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 16:50:20.909 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 1868.8541ms
+2026-09-07 16:50:21.019 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 16:50:21.760 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 16:50:21.792 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 16:50:26.016 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 16:50:26.071 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 4275.3888ms
+2026-09-07 16:50:26.110 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 16:50:26.159 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 5139.4789ms
+2026-09-07 16:50:32.222 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:50:32.232 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:50:32.244 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:50:32.264 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:50:32.275 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 27.2076ms
+2026-09-07 16:50:32.278 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:50:32.281 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 58.5445ms
+2026-09-07 16:55:21.953 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 16:55:22.295 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 16:55:22.297 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 16:55:22.371 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 16:55:22.378 +03:00 [INF] Hosting environment: Development
+2026-09-07 16:55:22.380 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 16:55:23.180 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 16:55:23.558 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 383.6252ms
+2026-09-07 16:55:23.564 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 16:55:23.564 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 16:55:23.588 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 23.5569ms
+2026-09-07 16:55:23.697 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 132.2040ms
+2026-09-07 16:55:23.730 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 16:55:23.738 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.7199ms
+2026-09-07 16:55:28.033 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 16:55:28.415 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 16:55:28.536 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 16:55:29.606 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 16:55:29.644 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 1081.1511ms
+2026-09-07 16:55:29.659 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 16:55:29.662 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 1628.4371ms
+2026-09-07 16:55:29.760 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 16:55:30.190 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 16:55:30.231 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 16:55:35.167 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 16:55:35.235 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 4994.6085ms
+2026-09-07 16:55:35.250 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 16:55:35.305 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 5544.2653ms
+2026-09-07 16:55:42.929 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:55:42.947 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:55:42.957 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:55:42.970 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:55:42.979 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 17.118ms
+2026-09-07 16:55:42.981 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:55:42.983 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 53.9535ms
+2026-09-07 16:57:56.357 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 16:57:56.785 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 16:57:56.787 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 16:57:56.849 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 16:57:56.850 +03:00 [INF] Hosting environment: Development
+2026-09-07 16:57:56.852 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 16:57:57.349 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 16:57:57.714 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 368.8522ms
+2026-09-07 16:57:57.728 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 16:57:57.728 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 16:57:57.733 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 4.3670ms
+2026-09-07 16:57:57.811 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 82.3441ms
+2026-09-07 16:57:57.846 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 16:57:57.855 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 9.6261ms
+2026-09-07 16:58:00.675 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 16:58:01.177 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 16:58:01.327 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 16:58:02.483 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 16:58:02.543 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 1184.6053ms
+2026-09-07 16:58:02.564 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 16:58:02.568 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 1893.2057ms
+2026-09-07 16:58:02.662 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 16:58:02.953 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 16:58:02.990 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 16:58:07.618 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 16:58:07.657 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 4663.6572ms
+2026-09-07 16:58:07.671 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 16:58:07.718 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 5055.4724ms
+2026-09-07 16:58:12.068 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:58:12.074 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:58:12.082 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:58:12.102 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:58:12.111 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 24.1183ms
+2026-09-07 16:58:12.113 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:58:12.117 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 48.7955ms
+2026-09-07 16:59:35.454 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 16:59:35.864 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 16:59:35.871 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 16:59:35.950 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 16:59:35.955 +03:00 [INF] Hosting environment: Development
+2026-09-07 16:59:35.958 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 16:59:36.227 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 16:59:36.670 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 448.3294ms
+2026-09-07 16:59:36.691 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 16:59:36.691 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 16:59:36.703 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 12.2674ms
+2026-09-07 16:59:36.822 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 130.6959ms
+2026-09-07 16:59:36.851 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 16:59:36.859 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.1046ms
+2026-09-07 16:59:40.561 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 16:59:40.837 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 16:59:40.936 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 16:59:41.849 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 16:59:41.909 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 927.7122ms
+2026-09-07 16:59:41.923 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 16:59:41.926 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 1365.0154ms
+2026-09-07 16:59:42.104 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 16:59:42.599 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 16:59:42.633 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 16:59:47.523 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 16:59:47.585 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 4946.8327ms
+2026-09-07 16:59:47.618 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 16:59:47.677 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 5573.3891ms
+2026-09-07 16:59:51.742 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 16:59:51.758 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:59:51.767 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 16:59:51.787 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 16:59:51.795 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 22.5166ms
+2026-09-07 16:59:51.799 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 16:59:51.803 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 60.6714ms
+2026-09-07 17:01:55.746 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 17:01:56.131 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 17:01:56.136 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 17:01:56.180 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 17:01:56.184 +03:00 [INF] Hosting environment: Development
+2026-09-07 17:01:56.186 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 17:01:56.754 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 17:01:57.093 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 345.2515ms
+2026-09-07 17:01:57.098 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 17:01:57.098 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 17:01:57.123 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 24.3095ms
+2026-09-07 17:01:57.200 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 101.6994ms
+2026-09-07 17:01:57.232 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 17:01:57.240 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.6168ms
+2026-09-07 17:05:28.084 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 17:05:28.457 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 17:05:28.465 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 17:05:28.535 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 17:05:28.541 +03:00 [INF] Hosting environment: Development
+2026-09-07 17:05:28.548 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 17:05:29.164 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 17:05:29.608 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 17:05:29.611 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 17:05:29.613 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 446.0628ms
+2026-09-07 17:05:29.635 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 26.7003ms
+2026-09-07 17:05:29.725 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 113.6951ms
+2026-09-07 17:05:29.756 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 17:05:29.768 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 12.1865ms
+2026-09-07 17:05:32.172 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 17:05:32.561 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 17:05:32.612 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 17:05:33.378 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 17:05:33.404 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 777.7608ms
+2026-09-07 17:05:33.418 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 17:05:33.422 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 1249.4328ms
+2026-09-07 17:05:33.525 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 17:05:33.892 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 17:05:33.952 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 17:05:38.279 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 17:05:38.356 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 4395.0378ms
+2026-09-07 17:05:38.377 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 17:05:38.420 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 4895.4729ms
+2026-09-07 17:07:51.633 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 17:07:52.083 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 17:07:52.090 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 17:07:52.155 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 17:07:52.157 +03:00 [INF] Hosting environment: Development
+2026-09-07 17:07:52.159 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 17:07:53.094 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 17:07:53.969 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 882.8947ms
+2026-09-07 17:07:53.986 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 17:07:53.989 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 17:07:54.025 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 35.5670ms
+2026-09-07 17:07:54.160 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 173.6490ms
+2026-09-07 17:07:54.194 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 17:07:54.206 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.7873ms
+2026-09-07 17:07:57.597 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 17:07:58.056 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 17:07:58.136 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 17:07:58.870 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 17:07:58.908 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 756.2183ms
+2026-09-07 17:07:58.920 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 17:07:58.924 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 1326.2915ms
+2026-09-07 17:07:59.184 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 17:07:59.564 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 17:07:59.600 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 17:08:03.514 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 17:08:03.603 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 3995.7006ms
+2026-09-07 17:08:03.630 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 17:08:03.682 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 4497.3736ms
+2026-09-07 17:08:07.348 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 17:08:07.361 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 17:08:07.372 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 17:08:07.396 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 17:08:07.408 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 29.7956ms
+2026-09-07 17:08:07.414 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 17:08:07.419 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 71.0472ms
+2026-09-07 17:13:13.831 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 17:13:14.249 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 17:13:14.254 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 17:13:14.311 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 17:13:14.313 +03:00 [INF] Hosting environment: Development
+2026-09-07 17:13:14.316 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 17:13:14.817 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 17:13:15.256 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 447.8063ms
+2026-09-07 17:13:15.262 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 17:13:15.262 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 17:13:15.285 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 23.5878ms
+2026-09-07 17:13:15.371 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 109.3475ms
+2026-09-07 17:13:15.405 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 17:13:15.412 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.9866ms
+2026-09-07 17:13:24.525 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 17:13:25.167 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 17:13:25.280 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 17:13:26.458 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 17:13:26.519 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 1200.6856ms
+2026-09-07 17:13:26.558 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 17:13:26.564 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 2038.6744ms
+2026-09-07 17:13:26.674 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 17:13:27.221 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 17:13:27.243 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 17:13:31.449 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 17:13:31.480 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 4233.9031ms
+2026-09-07 17:13:31.487 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 17:13:31.535 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 4859.3440ms
+2026-09-07 17:13:35.546 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 17:13:35.555 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 17:13:35.567 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 17:13:35.595 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 17:13:35.608 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 35.0748ms
+2026-09-07 17:13:35.614 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 17:13:35.618 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 72.2411ms
+2026-09-07 17:48:42.025 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 17:48:42.350 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 17:48:42.351 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 17:48:42.415 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 17:48:42.416 +03:00 [INF] Hosting environment: Development
+2026-09-07 17:48:42.417 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 17:48:42.950 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 17:48:43.196 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 251.2531ms
+2026-09-07 17:48:43.200 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 17:48:43.201 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 17:48:43.211 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 10.7771ms
+2026-09-07 17:48:43.265 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.3987ms
+2026-09-07 17:48:43.286 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 17:48:43.294 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.7966ms
+2026-09-07 17:48:45.748 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 17:48:45.937 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 17:48:45.980 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 17:48:46.567 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 17:48:46.594 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 600.2367ms
+2026-09-07 17:48:46.604 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 17:48:46.606 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 857.0402ms
+2026-09-07 17:48:46.639 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 17:48:46.810 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 17:48:46.826 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 17:48:48.771 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 17:48:48.787 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 1958.412ms
+2026-09-07 17:48:48.795 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 17:48:48.811 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 2171.6332ms
+2026-09-07 17:48:55.457 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 17:48:55.463 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 17:48:55.468 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 17:48:55.476 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 17:48:55.482 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 11.5672ms
+2026-09-07 17:48:55.485 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 17:48:55.487 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 30.5830ms
+2026-09-07 17:49:58.773 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 17:49:58.974 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 17:49:58.975 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 17:49:59.006 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 17:49:59.007 +03:00 [INF] Hosting environment: Development
+2026-09-07 17:49:59.007 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 17:49:59.245 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 17:49:59.441 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 198.6580ms
+2026-09-07 17:49:59.457 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 17:49:59.457 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 17:49:59.464 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 7.0856ms
+2026-09-07 17:49:59.512 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.1143ms
+2026-09-07 17:49:59.531 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 17:49:59.534 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.6474ms
+2026-09-07 17:50:01.271 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 17:50:01.365 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 17:50:01.385 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 17:50:01.589 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 17:50:01.600 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 209.1667ms
+2026-09-07 17:50:01.605 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 17:50:01.606 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 335.7824ms
+2026-09-07 17:50:01.634 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 17:50:01.725 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 17:50:01.731 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 17:50:02.807 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 17:50:02.820 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 1087.8038ms
+2026-09-07 17:50:02.824 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 17:50:02.836 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 1202.1664ms
+2026-09-07 17:50:06.245 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 17:50:06.255 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 17:50:06.261 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 17:50:06.269 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 17:50:06.273 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 10.2231ms
+2026-09-07 17:50:06.275 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 17:50:06.276 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 31.6062ms
+2026-09-07 17:51:47.804 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 17:51:48.136 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 17:51:48.137 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 17:51:48.177 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 17:51:48.178 +03:00 [INF] Hosting environment: Development
+2026-09-07 17:51:48.178 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 17:51:49.131 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 17:51:49.313 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 183.3470ms
+2026-09-07 17:51:49.326 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 17:51:49.326 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 17:51:49.333 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 7.0478ms
+2026-09-07 17:51:49.371 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.0385ms
+2026-09-07 17:51:49.392 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 17:51:49.397 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.4626ms
+2026-09-07 17:51:55.137 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 17:51:55.309 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 17:51:55.346 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 17:51:55.754 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 17:51:55.777 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 418.84ms
+2026-09-07 17:51:55.786 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 17:51:55.787 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 650.1333ms
+2026-09-07 17:51:55.837 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 17:51:56.125 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 17:51:56.157 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 17:51:58.199 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 17:51:58.212 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 2052.2097ms
+2026-09-07 17:51:58.217 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 17:51:58.228 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 2390.3910ms
+2026-09-07 17:52:00.563 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 17:52:00.584 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 17:52:00.603 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 17:52:00.617 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 17:52:00.626 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 15.9526ms
+2026-09-07 17:52:00.630 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 17:52:00.635 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 71.5689ms
+2026-09-07 17:52:18.211 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 17:52:18.495 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 17:52:18.497 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 17:52:18.530 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 17:52:18.531 +03:00 [INF] Hosting environment: Development
+2026-09-07 17:52:18.532 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 17:52:19.122 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 17:52:19.325 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 205.3530ms
+2026-09-07 17:52:19.336 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 17:52:19.336 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 17:52:19.341 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 4.6683ms
+2026-09-07 17:52:19.383 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.0745ms
+2026-09-07 17:52:19.406 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 17:52:19.411 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.9403ms
+2026-09-07 17:52:22.589 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 17:52:22.719 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 17:52:22.759 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 17:52:23.134 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 17:52:23.158 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 385.232ms
+2026-09-07 17:52:23.167 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 17:52:23.169 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 579.2870ms
+2026-09-07 17:52:23.208 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 17:52:23.437 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 17:52:23.457 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 17:52:25.368 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 17:52:25.381 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 1922.2499ms
+2026-09-07 17:52:25.389 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 17:52:25.405 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 2196.5428ms
+2026-09-07 17:52:28.420 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 17:52:28.443 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 17:52:28.448 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 17:52:28.457 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 17:52:28.462 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 11.539ms
+2026-09-07 17:52:28.463 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 17:52:28.465 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 45.8800ms
+2026-09-07 17:57:05.176 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 17:57:05.435 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 17:57:05.436 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 17:57:05.475 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 17:57:05.476 +03:00 [INF] Hosting environment: Development
+2026-09-07 17:57:05.476 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 17:57:06.034 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 17:57:06.286 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 253.9359ms
+2026-09-07 17:57:06.297 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 17:57:06.297 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 17:57:06.302 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 4.9992ms
+2026-09-07 17:57:06.358 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.6944ms
+2026-09-07 17:57:06.379 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 17:57:06.386 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.6671ms
+2026-09-07 17:57:10.627 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 17:57:10.807 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 17:57:10.847 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 17:57:11.273 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 17:57:11.294 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 435.7582ms
+2026-09-07 17:57:11.304 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 17:57:11.305 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 678.1461ms
+2026-09-07 17:57:11.343 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 17:57:11.503 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 17:57:11.520 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 17:57:13.078 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 17:57:13.094 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 1572.4582ms
+2026-09-07 17:57:13.098 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 17:57:13.109 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 1765.7299ms
+2026-09-07 17:57:16.476 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 17:57:16.482 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 17:57:16.489 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 17:57:16.498 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 17:57:16.502 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 11.0138ms
+2026-09-07 17:57:16.504 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 17:57:16.506 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 29.6948ms
+2026-09-07 17:59:57.306 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 17:59:57.540 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 17:59:57.541 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 17:59:57.572 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 17:59:57.573 +03:00 [INF] Hosting environment: Development
+2026-09-07 17:59:57.573 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 17:59:58.171 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 17:59:58.381 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 211.4776ms
+2026-09-07 17:59:58.385 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 17:59:58.385 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 17:59:58.397 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 12.6261ms
+2026-09-07 17:59:58.442 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 57.3704ms
+2026-09-07 17:59:58.464 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 17:59:58.470 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.8218ms
+2026-09-07 18:00:02.515 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 18:00:02.649 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 18:00:02.713 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 18:00:03.126 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 18:00:03.166 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 427.8003ms
+2026-09-07 18:00:03.205 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 18:00:03.209 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 694.3559ms
+2026-09-07 18:00:03.284 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 18:00:03.461 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 18:00:03.479 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 18:00:04.963 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 18:00:04.975 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 1493.2393ms
+2026-09-07 18:00:04.979 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 18:00:04.989 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 1705.3654ms
+2026-09-07 18:00:09.447 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 18:00:09.472 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 18:00:09.490 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 18:00:09.506 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 18:00:09.514 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 20.9066ms
+2026-09-07 18:00:09.517 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 18:00:09.520 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 72.6523ms
+2026-09-07 18:03:07.613 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 18:03:07.920 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 18:03:07.921 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 18:03:07.954 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 18:03:07.955 +03:00 [INF] Hosting environment: Development
+2026-09-07 18:03:07.955 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 18:03:08.379 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 18:03:08.602 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 225.0175ms
+2026-09-07 18:03:08.606 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 18:03:08.608 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 18:03:08.618 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 11.7385ms
+2026-09-07 18:03:08.669 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.2777ms
+2026-09-07 18:03:08.690 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 18:03:08.695 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.5637ms
+2026-09-07 18:03:11.556 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 18:03:11.724 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 18:03:11.770 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 18:03:12.521 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 18:03:12.556 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 771.9417ms
+2026-09-07 18:03:12.568 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 18:03:12.570 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 1013.4880ms
+2026-09-07 18:03:12.608 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 18:03:12.824 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 18:03:12.845 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 18:03:14.461 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 18:03:14.475 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 1627.1817ms
+2026-09-07 18:03:14.478 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 18:03:14.488 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 1879.9435ms
+2026-09-07 18:03:18.560 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 18:03:18.566 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 18:03:18.575 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 18:03:18.591 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 18:03:18.605 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 25.2958ms
+2026-09-07 18:03:18.609 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 18:03:18.613 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 52.6434ms
+2026-09-07 18:11:37.295 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 18:11:37.544 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 18:11:37.545 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 18:11:37.576 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 18:11:37.576 +03:00 [INF] Hosting environment: Development
+2026-09-07 18:11:37.577 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 18:11:38.004 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 18:11:38.223 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 222.7441ms
+2026-09-07 18:11:38.229 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 18:11:38.229 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 18:11:38.248 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 19.2743ms
+2026-09-07 18:11:38.291 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 62.3719ms
+2026-09-07 18:11:38.312 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 18:11:38.316 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.4527ms
+2026-09-07 18:11:39.971 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 18:11:40.089 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 18:11:40.110 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 18:11:40.520 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 18:11:40.544 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 424.5158ms
+2026-09-07 18:11:40.552 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 18:11:40.553 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 582.6281ms
+2026-09-07 18:11:40.590 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 18:11:40.802 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 18:11:40.831 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 18:11:43.170 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 18:11:43.191 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 2356.5165ms
+2026-09-07 18:11:43.197 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 18:11:43.211 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 2620.2970ms
+2026-09-07 18:11:50.113 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 18:11:50.119 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 18:11:50.128 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 18:11:50.139 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 18:11:50.146 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 14.5352ms
+2026-09-07 18:11:50.149 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 18:11:50.151 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 37.6507ms
+2026-09-07 18:12:46.908 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 18:12:47.134 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 18:12:47.135 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 18:12:47.169 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 18:12:47.169 +03:00 [INF] Hosting environment: Development
+2026-09-07 18:12:47.170 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 18:12:47.401 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 18:12:47.611 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 211.9227ms
+2026-09-07 18:12:47.645 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 18:12:47.645 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 18:12:47.648 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 3.9959ms
+2026-09-07 18:12:47.691 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.2722ms
+2026-09-07 18:12:47.710 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 18:12:47.714 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.9906ms
+2026-09-07 18:12:49.785 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 18:12:49.866 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 18:12:49.886 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 18:12:50.088 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 18:12:50.099 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 206.9659ms
+2026-09-07 18:12:50.104 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 18:12:50.105 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 320.0779ms
+2026-09-07 18:12:50.126 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 18:12:50.180 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 18:12:50.186 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 18:12:51.669 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 18:12:51.713 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 1526.212ms
+2026-09-07 18:12:51.724 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 18:12:51.734 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 1608.0308ms
+2026-09-07 18:12:54.891 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 18:12:54.898 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 18:12:54.907 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 18:12:54.918 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 18:12:54.923 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 12.554ms
+2026-09-07 18:12:54.925 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 18:12:54.927 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 35.3163ms
+2026-09-07 18:13:52.407 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 18:13:52.610 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 18:13:52.613 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 18:13:52.652 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 18:13:52.652 +03:00 [INF] Hosting environment: Development
+2026-09-07 18:13:52.654 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 18:13:52.989 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 18:13:53.148 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 161.1084ms
+2026-09-07 18:13:53.158 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 18:13:53.158 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 18:13:53.161 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 3.6294ms
+2026-09-07 18:13:53.207 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.1414ms
+2026-09-07 18:13:53.226 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 18:13:53.230 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.1595ms
+2026-09-07 18:14:00.061 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 18:14:00.203 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 18:14:00.243 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 18:14:00.705 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 18:14:00.732 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 475.1566ms
+2026-09-07 18:14:00.745 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 18:14:00.747 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 685.1851ms
+2026-09-07 18:14:00.783 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 18:14:01.159 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 18:14:01.185 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 18:14:03.137 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 18:14:03.145 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 1956.9098ms
+2026-09-07 18:14:03.148 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 18:14:03.167 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 2383.9112ms
+2026-09-07 18:14:07.321 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 18:14:07.326 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 18:14:07.331 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 18:14:07.338 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 18:14:07.343 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 10.2482ms
+2026-09-07 18:14:07.345 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 18:14:07.346 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 24.4867ms
+2026-09-07 18:14:20.489 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/api/Urun/6a9d43a082031eb44a69ffba - -
+2026-09-07 18:14:20.493 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/api/Urun/6a9d43a082031eb44a69ffba - - - 404 0 - 4.3148ms
+2026-09-07 18:14:20.515 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/api/Urun/6a9d43a082031eb44a69ffba - -
+2026-09-07 18:14:20.517 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/api/Urun/6a9d43a082031eb44a69ffba - - - 404 0 - 1.6988ms
+2026-09-07 18:14:20.546 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/api/Urun - -
+2026-09-07 18:14:20.549 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/api/Urun - - - 404 0 - 2.8760ms
+2026-09-07 18:19:56.437 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 18:19:57.039 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 18:19:57.039 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 18:19:57.090 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 18:19:57.091 +03:00 [INF] Hosting environment: Development
+2026-09-07 18:19:57.092 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 18:19:57.555 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 18:19:57.856 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 307.5878ms
+2026-09-07 18:19:57.860 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 18:19:57.860 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 18:19:57.875 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 14.9830ms
+2026-09-07 18:19:57.935 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 74.8175ms
+2026-09-07 18:19:57.956 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 18:19:57.965 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 9.6930ms
+2026-09-07 18:19:59.426 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 18:19:59.675 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 18:19:59.728 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 18:20:00.395 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 18:20:00.418 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 677.9954ms
+2026-09-07 18:20:00.428 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 18:20:00.430 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 1003.2915ms
+2026-09-07 18:20:00.466 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 18:20:00.767 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 18:20:00.786 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 18:20:02.511 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 18:20:02.525 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 1737.2841ms
+2026-09-07 18:20:02.528 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 18:20:02.539 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 2072.5170ms
+2026-09-07 18:20:05.872 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 18:20:05.876 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 18:20:05.882 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 18:20:05.890 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 18:20:05.894 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 9.3363ms
+2026-09-07 18:20:05.896 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 18:20:05.898 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 26.0044ms
+2026-09-07 18:20:09.058 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/api/Urun/6a9d43a082031eb44a69ffba - -
+2026-09-07 18:20:09.060 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/api/Urun/6a9d43a082031eb44a69ffba - - - 404 0 - 2.0386ms
+2026-09-07 18:20:09.073 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/api/Urun/6a9d43a082031eb44a69ffba - -
+2026-09-07 18:20:09.075 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/api/Urun/6a9d43a082031eb44a69ffba - - - 404 0 - 1.9769ms
+2026-09-07 18:20:09.095 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/api/Urun - -
+2026-09-07 18:20:09.097 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/api/Urun - - - 404 0 - 1.7382ms
+2026-09-07 18:21:18.283 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 18:21:18.522 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 18:21:18.523 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 18:21:18.554 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 18:21:18.555 +03:00 [INF] Hosting environment: Development
+2026-09-07 18:21:18.555 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 18:21:19.251 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 18:21:19.443 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 195.1107ms
+2026-09-07 18:21:19.447 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 18:21:19.447 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 18:21:19.459 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 11.6622ms
+2026-09-07 18:21:19.495 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.2564ms
+2026-09-07 18:21:19.518 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 18:21:19.522 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.7857ms
+2026-09-07 18:21:23.584 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 18:21:23.736 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 18:21:23.793 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 18:21:24.259 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 18:21:24.304 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 492.8439ms
+2026-09-07 18:21:24.319 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 18:21:24.320 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 736.1403ms
+2026-09-07 18:21:24.369 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 18:21:24.532 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 18:21:24.548 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 18:21:25.999 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 18:21:26.011 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 1460.6473ms
+2026-09-07 18:21:26.014 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 18:21:26.024 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 1655.1562ms
+2026-09-07 18:21:29.312 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 18:21:29.317 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 18:21:29.322 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 18:21:29.331 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 18:21:29.335 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 9.407ms
+2026-09-07 18:21:29.336 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 18:21:29.337 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 25.3808ms
+2026-09-07 18:22:06.575 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 18:22:06.812 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 18:22:06.813 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 18:22:06.844 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 18:22:06.844 +03:00 [INF] Hosting environment: Development
+2026-09-07 18:22:06.845 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 18:22:07.053 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 18:22:07.238 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 187.4527ms
+2026-09-07 18:22:07.251 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 18:22:07.251 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 18:22:07.254 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 3.4070ms
+2026-09-07 18:22:07.296 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.5118ms
+2026-09-07 18:22:07.317 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 18:22:07.321 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.1804ms
+2026-09-07 18:22:09.130 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 18:22:09.217 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 18:22:09.237 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 18:22:09.436 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 18:22:09.446 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 203.5253ms
+2026-09-07 18:22:09.453 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 18:22:09.454 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 324.0714ms
+2026-09-07 18:22:09.476 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 18:22:09.598 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 18:22:09.619 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 18:22:11.395 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 18:22:11.406 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 1784.4606ms
+2026-09-07 18:22:11.410 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 18:22:11.421 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 1944.2040ms
+2026-09-07 18:22:14.471 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 18:22:14.476 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 18:22:14.482 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 18:22:14.491 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 18:22:14.497 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 12.7131ms
+2026-09-07 18:22:14.500 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 18:22:14.502 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 31.3136ms
+2026-09-07 18:22:17.099 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/api/Urun/6a9d43a082031eb44a69ffba - -
+2026-09-07 18:22:17.102 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/api/Urun/6a9d43a082031eb44a69ffba - - - 404 0 - 2.5872ms
+2026-09-07 18:22:17.111 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/api/Urun/6a9d43a082031eb44a69ffba - -
+2026-09-07 18:22:17.113 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/api/Urun/6a9d43a082031eb44a69ffba - - - 404 0 - 2.1302ms
+2026-09-07 18:22:17.129 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/api/Urun - -
+2026-09-07 18:22:17.131 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/api/Urun - - - 404 0 - 1.6217ms
+2026-09-07 18:23:03.280 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-07 18:23:03.492 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-07 18:23:03.493 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-07 18:23:03.526 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 18:23:03.526 +03:00 [INF] Hosting environment: Development
+2026-09-07 18:23:03.527 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-07 18:23:04.057 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-07 18:23:04.237 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 182.4871ms
+2026-09-07 18:23:04.253 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-07 18:23:04.253 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-07 18:23:04.257 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 3.8523ms
+2026-09-07 18:23:04.297 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.9822ms
+2026-09-07 18:23:04.322 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-07 18:23:04.327 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.4595ms
+2026-09-07 18:23:06.494 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41
+2026-09-07 18:23:06.577 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 18:23:06.593 +03:00 [INF] Route matched with {action = "GirisYap", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(StockHub.Services.DTO.AuthDtos.KullaniciGirisDto) on controller StockHub.Services.Controllers.AuthController (StockHub.Services).
+2026-09-07 18:23:06.820 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.AuthDtos.TokenResponseDto'.
+2026-09-07 18:23:06.844 +03:00 [INF] Executed action StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services) in 240.5194ms
+2026-09-07 18:23:06.855 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.AuthController.GirisYap (StockHub.Services)'
+2026-09-07 18:23:06.858 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7045/api/Auth/login application/json;+charset=utf-8 41 - 200 - application/json;+charset=utf-8 363.4462ms
+2026-09-07 18:23:06.894 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Dashboard - -
+2026-09-07 18:23:07.062 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 18:23:07.074 +03:00 [INF] Route matched with {action = "GetDashboardStatistics", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStatistics() on controller StockHub.Services.Controllers.DashboardController (StockHub.Services).
+2026-09-07 18:23:09.104 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.DashboardDto'.
+2026-09-07 18:23:09.116 +03:00 [INF] Executed action StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services) in 2040.3332ms
+2026-09-07 18:23:09.122 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.DashboardController.GetDashboardStatistics (StockHub.Services)'
+2026-09-07 18:23:09.133 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Dashboard - - - 200 - application/json;+charset=utf-8 2238.7615ms
+2026-09-07 18:23:12.430 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7045/api/Urun - -
+2026-09-07 18:23:12.441 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 18:23:12.459 +03:00 [INF] Route matched with {action = "TumUrunleriGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TumUrunleriGetir() on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-07 18:23:12.478 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 18:23:12.488 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services) in 21.5653ms
+2026-09-07 18:23:12.490 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.TumUrunleriGetir (StockHub.Services)'
+2026-09-07 18:23:12.493 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7045/api/Urun - - - 200 - application/json;+charset=utf-8 62.1860ms

@@ -1,0 +1,42 @@
+2026-09-16 15:57:48.997 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-16 15:57:49.362 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-16 15:57:49.364 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-16 15:57:49.425 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-16 15:57:49.429 +03:00 [INF] Hosting environment: Development
+2026-09-16 15:57:49.431 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-16 15:57:50.138 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-16 15:57:50.399 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 263.9239ms
+2026-09-16 15:57:50.401 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-16 15:57:50.401 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-16 15:57:50.412 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 11.2996ms
+2026-09-16 15:57:50.463 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.6496ms
+2026-09-16 15:57:50.499 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-16 15:57:50.508 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.8301ms
+2026-09-16 15:58:29.262 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7045/api/Kategori application/json 90
+2026-09-16 15:58:29.551 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.KategoriController.KategoriEkle (StockHub.Services)'
+2026-09-16 15:58:29.625 +03:00 [INF] Route matched with {action = "KategoriEkle", controller = "Kategori"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] KategoriEkle(StockHub.Services.DTO.CategoryDtos.KategoriEkleDto) on controller StockHub.Services.Controllers.KategoriController (StockHub.Services).
+2026-09-16 15:58:32.789 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-09-16 15:58:32.806 +03:00 [INF] Executed action StockHub.Services.Controllers.KategoriController.KategoriEkle (StockHub.Services) in 3165.4146ms
+2026-09-16 15:58:32.823 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.KategoriController.KategoriEkle (StockHub.Services)'
+2026-09-16 15:58:32.834 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7045/api/Kategori application/json 90 - 200 - text/plain;+charset=utf-8 3572.1361ms
+2026-09-16 16:08:54.396 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-16 16:08:54.597 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-16 16:08:54.598 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-16 16:08:54.629 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-16 16:08:54.631 +03:00 [INF] Hosting environment: Development
+2026-09-16 16:08:54.631 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-16 16:08:55.034 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-16 16:08:55.203 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 172.2831ms
+2026-09-16 16:08:55.206 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-16 16:08:55.206 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-16 16:08:55.216 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 9.8062ms
+2026-09-16 16:08:55.257 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.2337ms
+2026-09-16 16:08:55.275 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-16 16:08:55.279 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.0591ms
+2026-09-16 16:09:33.846 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7045/api/Urun application/json 120
+2026-09-16 16:09:34.096 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.UrunEkle (StockHub.Services)'
+2026-09-16 16:09:34.168 +03:00 [INF] Route matched with {action = "UrunEkle", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UrunEkle(StockHub.Services.DTO.ProductDtos.UrunEkleDto) on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-16 16:09:36.069 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-09-16 16:09:36.098 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.UrunEkle (StockHub.Services) in 1902.076ms
+2026-09-16 16:09:36.108 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.UrunEkle (StockHub.Services)'
+2026-09-16 16:09:36.109 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7045/api/Urun application/json 120 - 400 - application/problem+json;+charset=utf-8 2263.3011ms

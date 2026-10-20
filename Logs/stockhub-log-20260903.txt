@@ -1,0 +1,71 @@
+2026-09-03 20:39:12.677 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-03 20:39:13.021 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-03 20:39:13.023 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-03 20:39:13.084 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-03 20:39:13.085 +03:00 [INF] Hosting environment: Development
+2026-09-03 20:39:13.086 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-03 20:39:13.403 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-03 20:39:13.769 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 371.8042ms
+2026-09-03 20:39:13.773 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-03 20:39:13.773 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-03 20:39:13.788 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 14.7226ms
+2026-09-03 20:39:13.861 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 88.1909ms
+2026-09-03 20:39:13.888 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-03 20:39:13.898 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 9.6951ms
+2026-09-03 20:44:48.905 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/api/Urun/paged - -
+2026-09-03 20:44:49.120 +03:00 [INF] Executing endpoint 'StockHub.Services.Controllers.UrunController.UrunleriFiltreliGetir (StockHub.Services)'
+2026-09-03 20:44:49.199 +03:00 [INF] Route matched with {action = "UrunleriFiltreliGetir", controller = "Urun"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UrunleriFiltreliGetir(StockHub.Services.DTO.ProductDtos.UrunFiltreDto) on controller StockHub.Services.Controllers.UrunController (StockHub.Services).
+2026-09-03 20:44:51.567 +03:00 [INF] Executing OkObjectResult, writing value of type 'StockHub.Services.DTO.PagedResultDto`1[[StockHub.Services.DTO.ProductDtos.UrunListeleDto, StockHub.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-03 20:44:51.593 +03:00 [INF] Executed action StockHub.Services.Controllers.UrunController.UrunleriFiltreliGetir (StockHub.Services) in 2374.0001ms
+2026-09-03 20:44:51.605 +03:00 [INF] Executed endpoint 'StockHub.Services.Controllers.UrunController.UrunleriFiltreliGetir (StockHub.Services)'
+2026-09-03 20:44:51.617 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/api/Urun/paged - - - 200 - application/json;+charset=utf-8 2711.6859ms
+2026-09-03 21:01:19.653 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-03 21:01:19.879 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-03 21:01:19.894 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-03 21:01:19.929 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-03 21:01:19.930 +03:00 [INF] Hosting environment: Development
+2026-09-03 21:01:19.931 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-03 21:01:20.381 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-03 21:01:20.622 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 243.3764ms
+2026-09-03 21:01:20.627 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-03 21:01:20.627 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-03 21:01:20.647 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 19.0508ms
+2026-09-03 21:01:20.702 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 74.2087ms
+2026-09-03 21:01:20.732 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-03 21:01:20.737 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.1138ms
+2026-09-03 21:01:31.902 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/health - -
+2026-09-03 21:01:32.033 +03:00 [INF] Executing endpoint 'Health checks'
+2026-09-03 21:01:32.614 +03:00 [ERR] Health check MongoDB Sağlık Kontrolü threw an unhandled exception after 499.5792ms
+System.TypeLoadException: Could not load type 'MongoDB.Driver.MongoClientBase' from assembly 'MongoDB.Driver, Version=3.10.0.0, Culture=neutral, PublicKeyToken=94992a530f44e321'.
+   at HealthChecks.MongoDb.MongoDbHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at HealthChecks.MongoDb.MongoDbHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService.RunCheckAsync(HealthCheckRegistration registration, CancellationToken cancellationToken)
+2026-09-03 21:01:32.976 +03:00 [INF] Executed endpoint 'Health checks'
+2026-09-03 21:01:33.001 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/health - - - 503 - text/plain 1099.1992ms
+2026-09-03 21:01:33.153 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/favicon.ico - -
+2026-09-03 21:01:33.157 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/favicon.ico - - - 404 0 - 3.4755ms
+2026-09-03 21:06:36.409 +03:00 [INF] User profile is available. Using 'C:\Users\msi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-03 21:06:36.623 +03:00 [INF] Now listening on: https://localhost:7045
+2026-09-03 21:06:36.624 +03:00 [INF] Now listening on: http://localhost:5008
+2026-09-03 21:06:36.659 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-03 21:06:36.661 +03:00 [INF] Hosting environment: Development
+2026-09-03 21:06:36.662 +03:00 [INF] Content root path: C:\Users\msi\source\repos\DepoHub\Services\StokService\StockHub.Services\
+2026-09-03 21:06:37.247 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/index.html - -
+2026-09-03 21:06:37.457 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/index.html - - - 200 - text/html;charset=utf-8 214.0206ms
+2026-09-03 21:06:37.467 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_vs/browserLink - -
+2026-09-03 21:06:37.467 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - -
+2026-09-03 21:06:37.474 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_framework/aspnetcore-browser-refresh.js - - - 200 13770 application/javascript;+charset=utf-8 7.1433ms
+2026-09-03 21:06:37.529 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 62.2450ms
+2026-09-03 21:06:37.552 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - -
+2026-09-03 21:06:37.557 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.4031ms
+2026-09-03 21:07:05.871 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7045/health - -
+2026-09-03 21:07:06.047 +03:00 [INF] Executing endpoint 'Health checks'
+2026-09-03 21:07:06.125 +03:00 [ERR] Health check MongoDB Sağlık Kontrolü threw an unhandled exception after 7.7231ms
+System.TypeLoadException: Could not load type 'MongoDB.Driver.MongoClientBase' from assembly 'MongoDB.Driver, Version=3.10.0.0, Culture=neutral, PublicKeyToken=94992a530f44e321'.
+   at HealthChecks.MongoDb.MongoDbHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at HealthChecks.MongoDb.MongoDbHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService.RunCheckAsync(HealthCheckRegistration registration, CancellationToken cancellationToken)
+2026-09-03 21:07:06.190 +03:00 [INF] Executed endpoint 'Health checks'
+2026-09-03 21:07:06.194 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7045/health - - - 503 - application/json;+charset=utf-8 323.5871ms
