@@ -1,0 +1,63 @@
+﻿@model StockHub.Web.Models.GirisModel
+@{
+    ViewData["Title"] = "Giriş Yap";
+    Layout = null; // Giriş sayfasında ana menüyü gizliyoruz
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StockHub - Giriş Yap</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+        body {
+            background-color: #f4f6f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .login-card {
+            width: 100%;
+            max-width: 400px;
+            padding: 30px;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <div class="text-center mb-4">
+            <h3 class="fw-bold text-primary">StockHub</h3>
+            <p class="text-muted">Stok Takip Sistemine Giriş Yapın</p>
+        </div>
+
+        @if (ViewBag.Hata != null)
+        {
+            <div class="alert alert-danger py-2" role="alert">
+                @ViewBag.Hata
+            </div>
+        }
+
+        <form asp-action="Login" method="post">
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Kullanıcı Adı</label>
+                <input asp-for="KullaniciAdi" class="form-control" placeholder="Örn: admin" required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Şifre</label>
+                <input asp-for="Sifre" type="password" class="form-control" placeholder="••••••" required />
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold">Giriş Yap</button>
+        </form>
+    </div>
+
+</body>
+</html>

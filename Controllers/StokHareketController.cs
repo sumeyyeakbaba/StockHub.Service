@@ -1,41 +1,59 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using StockHub.DTOs.StokHareketDtos;
-using StockHub.Services.Abstract;
-using StockHub.Services.DTO;
-using StockHub.Services.Services;
+using StockHub.Web.Models;
+using StockHub.Web.Services;
 
-namespace StockHub.Services.Controllers
+namespace StockHub.Web.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class StokHareketController : ControllerBase
+    public class StokHareketController : Controller
     {
-        private readonly IStokHareketService _stokHareketService;
+        private readonly IApiService _apiService;
 
-        public StokHareketController(IStokHareketService stokHareketService)
+        public StokHareketController(IApiService apiService)
         {
-            _stokHareketService = stokHareketService;
+            _apiService = apiService;
         }
 
+        // GET: /StokHareket/Ekle?urunId=...
         [HttpGet]
-        public async Task<IActionResult> GetAllStokHareket()
+        public async Task<IActionResult> Ekle(string urunId)
         {
-            var values = await _stokHareketService.GetAllStokHareketAsync();
-            return Ok(values);
-        }
+            var token = HttpContext.Session.GetString("AuthToken");
+            if (string.IsNullOrEmpty(token))
+                return RedirectToAction("Login", "Auth");
 
-        [HttpGet("GetByUrunId/{urunId}")]
-        public async Task<IActionResult> GetStokHareketleriByUrunId(string urunId)
-        {
-            var values = await _stokHareketService.GetStokHareketleriByUrunIdAsync(urunId);
-            return Ok(values);
-        }
+            if (string.IsNullOrEmpty(urunId))
+                return RedirectToAction("Index", "Urun");
 
+            var urun = await _apiService.GetAsync<UrunGuncelleModel>($"Urun/{urunId}");
+
+            var model = new StokHareketEkleViewModel
+            {
+                UrunId = urunId,
+                UrunAdi = urun?.UrunAdi ?? "Seçili Ürün"
+            };
+
+            // ~/ kaldırıldı, göreceli yol verildi:
+            return View("../Urun/StokIslem", model);
+        }
+        // POST: /StokHareket/Ekle
         [HttpPost]
-        public async Task<IActionResult> CreateStokHareket(CreateStokHareketDto createDto)
+        public async Task<IActionResult> Ekle(StokHareketEkleViewModel model)
         {
-            await _stokHareketService.CreateStokHareketAsync(createDto);
-            return Ok("Stok hareketi başarıyla eklendi ve ürün stoğu güncellendi.");
+            var token = HttpContext.Session.GetString("AuthToken");
+            if (string.IsNullOrEmpty(token))
+                return RedirectToAction("Login", "Auth");
+
+            if (!ModelState.IsValid)
+                return View("../Urun/StokIslem", model);
+
+            var (basarili, hata) = await _apiService.PostWithDetailAsync("StokHareket", model);
+            if (basarili)
+            {
+                return RedirectToAction("Index", "Urun");
+            }
+
+            ViewBag.Hata = hata;
+            return View("../Urun/StokIslem", model);
         }
     }
 }

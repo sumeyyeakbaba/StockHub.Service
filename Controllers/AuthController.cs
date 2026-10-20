@@ -1,31 +1,50 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using StockHub.Services.DTO.AuthDtos;
-using StockHub.Services.Services;
+using StockHub.Web.Models;
+using StockHub.Web.Services;
 
-namespace StockHub.Services.Controllers
+namespace StockHub.Web.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class AuthController : ControllerBase
+    public class AuthController : Controller
     {
-        private readonly ITokenService _tokenService;
+        private readonly IApiService _apiService;
 
-        public AuthController(ITokenService tokenService)
+        public AuthController(IApiService apiService)
         {
-            _tokenService = tokenService;
+            _apiService = apiService;
         }
 
-        [HttpPost("login")]
-        public IActionResult GirisYap([FromBody] KullaniciGirisDto model)
+        [HttpGet]
+        public IActionResult Login()
         {
-            // Test amaçlı sabit kullanıcı doğrulaması (Admin girişi)
-            if (model.KullaniciAdi == "admin" && model.Sifre == "123456")
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(GirisModel model)
+        {
+            if (!ModelState.IsValid)
+                return View(model);
+
+            var token = await _apiService.GirisYapAsync(model.KullaniciAdi, model.Sifre);
+
+            if (string.IsNullOrEmpty(token))
             {
-                var tokenResult = _tokenService.TokenUret(model.KullaniciAdi, "Admin");
-                return Ok(tokenResult);
+                ViewBag.Hata = "Kullanıcı adı veya şifre hatalı!";
+                return View(model);
             }
 
-            return Unauthorized(new { Mesaj = "Kullanıcı adı veya şifre hatalı." });
+            // Alınan JWT Token'ı Session'a yazıyoruz
+            HttpContext.Session.SetString("AuthToken", token);
+            HttpContext.Session.SetString("KullaniciAdi", model.KullaniciAdi);
+
+            return RedirectToAction("Index", "Home");
+        }
+
+        [HttpGet]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login");
         }
     }
 }

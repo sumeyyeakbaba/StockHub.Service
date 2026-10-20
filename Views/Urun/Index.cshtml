@@ -1,0 +1,113 @@
+﻿@model List<StockHub.Web.Models.UrunListViewModel>
+@{
+    ViewData["Title"] = "Depo Envanter Listesi";
+}
+
+<div class="container-fluid py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2 class="fw-bold mb-1 text-dark">Depo Envanter Listesi</h2>
+            <p class="text-muted mb-0">MongoDB üzerinde kayıtlı tüm ürünler, anlık stoklar ve hızlı aksiyonlar</p>
+        </div>
+        <div>
+            <!-- asp-controller="WebUrun" yerine "Urun" yapıldı -->
+            <a asp-controller="Urun" asp-action="Ekle" class="btn btn-primary fw-semibold">
+                <i class="bi bi-plus-circle me-1"></i> Yeni Ürün Ekle
+            </a>
+        </div>
+    </div>
+
+    <div class="card shadow-sm border-0 rounded-3">
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th class="ps-4">Görsel</th>
+                            <th>Ürün Adı</th>
+                            <th>Barkod</th>
+                            <th>Kategori</th>
+                            <th>Birim Fiyat</th>
+                            <th>Mevcut Stok</th>
+                            <th>Durum</th>
+                            <th class="text-center pe-4">İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model == null || !Model.Any())
+                        {
+                            <tr>
+                                <td colspan="8" class="text-center py-5 text-muted">
+                                    <i class="bi bi-inbox fs-2 d-block mb-2"></i>
+                                    Depoda henüz kayıtlı ürün bulunmuyor.
+                                </td>
+                            </tr>
+                        }
+                        else
+                        {
+                            @foreach (var item in Model)
+                            {
+                                // Sayfanın patlamaması için KritikStokSeviyesi 10 olarak sabitlendi
+                                var kritikMi = item.StokMiktari <= 10;
+                                var urunId = !string.IsNullOrEmpty(item.Id)
+                                ? item.Id
+                                : (!string.IsNullOrEmpty(item.UrunId) ? item.UrunId : item.ProductId);
+
+                                <tr>
+                                    <td class="ps-4">
+                                        <!-- Resim yoksa boş kalıp sayfayı bozmasın diye varsayılan görsel eklendi -->
+                                        <img src="@(string.IsNullOrEmpty(item.UrunResimUrl) ? "https://placehold.co/45" : item.UrunResimUrl)"
+                                             alt="@item.UrunAdi"
+                                             class="rounded border"
+                                             style="width: 45px; height: 45px; object-fit: cover;"
+                                             onerror="this.src='https://placehold.co/45'" />
+                                    </td>
+                                    <td class="fw-semibold text-dark">@item.UrunAdi</td>
+                                    <!-- Barkod ve Kategori boş geldiğinde Genel ve tire (-) yazması sağlandı -->
+                                    <td><span class="badge bg-light text-dark border">@(string.IsNullOrEmpty(item.Barkod) ? "-" : item.Barkod)</span></td>
+                                    <td><span class="badge bg-secondary text-white">@(string.IsNullOrEmpty(item.Kategori) ? "Genel" : item.Kategori)</span></td>
+                                    <td>@item.UrunFiyati.ToString("C2")</td>
+                                    <td>
+                                        <span class="fw-bold @(kritikMi ? "text-danger" : "text-dark")">
+                                            @item.StokMiktari Adet
+                                        </span>
+                                    </td>
+                                    <td>
+                                        @if (kritikMi)
+                                        {
+                                            <span class="badge bg-danger">
+                                                <i class="bi bi-exclamation-triangle me-1"></i>Kritik Stok
+                                            </span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-success">
+                                                <i class="bi bi-check-circle me-1"></i>Yeterli
+                                            </span>
+                                        }
+                                    </td>
+                                    <td class="text-center pe-4">
+                                        <div class="btn-group btn-group-sm" role="group">
+                                            <!-- Güncelleme Butonu: WebUrun yerine doğrudan Urun'a yönlendirildi -->
+                                            <a asp-controller="Urun" asp-action="Guncelle" asp-route-id="@urunId" class="btn btn-outline-primary" title="Ürünü Düzenle">
+                                                <i class="bi bi-pencil"></i>
+                                            </a>
+                                            <!-- Stok Hareketi Butonu -->
+                                            <a asp-controller="StokHareket" asp-action="Ekle" asp-route-urunId="@urunId" class="btn btn-outline-success" title="Stok Hareketi Ekle">
+                                                <i class="bi bi-arrow-left-right"></i>
+                                            </a>
+                                            <!-- Silme Butonu: WebUrun yerine doğrudan Urun'a yönlendirildi -->
+                                            <a asp-controller="Urun" asp-action="Sil" asp-route-id="@urunId" class="btn btn-outline-danger" onclick="return confirm('Bu ürünü MongoDB veritabanından silmek istediğinize emin misiniz?');" title="Ürünü Sil">
+                                                <i class="bi bi-trash"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

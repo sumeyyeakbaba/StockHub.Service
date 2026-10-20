@@ -1,0 +1,61 @@
+﻿@model StockHub.Web.Models.StokHareketEkleViewModel
+@{
+    ViewData["Title"] = "Stok Hareketi İşlemi";
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0 rounded-3">
+                <div class="card-header bg-success text-white py-3">
+                    <h5 class="card-title mb-0">
+                        <i class="bi bi-arrow-left-right me-2"></i>Stok Giriş / Çıkış Hareketi
+                    </h5>
+                </div>
+                <div class="card-body p-4">
+                    @if (ViewBag.Hata != null)
+                    {
+                        <div class="alert alert-danger" role="alert">
+                            @ViewBag.Hata
+                        </div>
+                    }
+
+                    <form asp-controller="StokHareket" asp-action="Ekle" method="post">
+                        <input type="hidden" asp-for="UrunId" />
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Ürün</label>
+                            <input type="text" class="form-control bg-light" value="@Model.UrunAdi" readonly />
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="HareketTuru" class="form-label fw-bold">İşlem Türü</label>
+                            <select asp-for="HareketTuru" class="form-select">
+                                <option value="Giris">Stok Girişi (+)</option>
+                                <option value="Cikis">Stok Çıkışı (-)</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Miktar" class="form-label fw-bold">Miktar (Adet)</label>
+                            <input asp-for="Miktar" type="number" min="1" class="form-control" placeholder="Adet giriniz..." required />
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="Aciklama" class="form-label fw-bold">Açıklama / Not</label>
+                            <textarea asp-for="Aciklama" class="form-control" rows="3" placeholder="Örn: Sipariş girişi, defolu ürün iadesi vb."></textarea>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <a asp-controller="Urun" asp-action="Index" class="btn btn-outline-secondary">
+                                <i class="bi bi-arrow-left me-1"></i> Vazgeç
+                            </a>
+                            <button type="submit" class="btn btn-success fw-semibold">
+                                <i class="bi bi-check-circle me-1"></i> Hareketi Kaydet
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

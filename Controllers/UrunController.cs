@@ -1,68 +1,120 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using StockHub.Services.DTO.ProductDtos;
-using StockHub.Services.Services.UrunServices;
+using StockHub.Web.Models;
+using StockHub.Web.Services;
 
-namespace StockHub.Services.Controllers
+namespace StockHub.Web.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class UrunController : ControllerBase
+    public class UrunController : Controller
     {
-        private readonly IUrunService _urunService;
+        private readonly IApiService _apiService;
 
-        public UrunController(IUrunService urunService)
+        public UrunController(IApiService apiService)
         {
-            _urunService = urunService;
+            _apiService = apiService;
         }
 
-        // Tüm ürünleri getiren endpoint (GET: api/Urun)
+        // 404 hatasını çözen ana metod burası:
         [HttpGet]
-        public async Task<IActionResult> TumUrunleriGetir()
+        public async Task<IActionResult> Index()
         {
-            var urunler = await _urunService.TumUrunleriGetirAsync();
-            return Ok(urunler);
+            var token = HttpContext.Session.GetString("AuthToken");
+            if (string.IsNullOrEmpty(token))
+                return RedirectToAction("Login", "Auth");
+
+            // Backend API'deki [HttpGet] api/Urun endpoint'inden listeyi çekiyoruz
+            var urunler = await _apiService.GetAsync<List<UrunListViewModel>>("Urun");
+
+            return View(urunler ?? new List<UrunListViewModel>());
         }
 
-        // Id'ye göre ürün getiren endpoint (GET: api/Urun/{id})
-        [HttpGet("{id}")]
-        public async Task<IActionResult> IdyeGoreUrunGetir(string id)
+        [HttpGet]
+        public IActionResult Ekle()
         {
-            var urun = await _urunService.IdyeGoreUrunGetirAsync(id);
+            var token = HttpContext.Session.GetString("AuthToken");
+            if (string.IsNullOrEmpty(token))
+                return RedirectToAction("Login", "Auth");
+
+            return View(new UrunEkleModel());
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Ekle(UrunEkleModel model)
+        {
+            var token = HttpContext.Session.GetString("AuthToken");
+            if (string.IsNullOrEmpty(token))
+                return RedirectToAction("Login", "Auth");
+
+            if (!ModelState.IsValid)
+                return View(model);
+
+            var (basarili, hata) = await _apiService.PostWithDetailAsync("Urun", model);
+
+            if (basarili)
+            {
+                return RedirectToAction("Index");
+            }
+
+            ViewBag.Hata = hata;
+            return View(model);
+        }
+        // GET: /Urun/Guncelle?id=...
+        [HttpGet]
+        public async Task<IActionResult> Guncelle(string id)
+        {
+            var token = HttpContext.Session.GetString("AuthToken");
+            if (string.IsNullOrEmpty(token))
+                return RedirectToAction("Login", "Auth");
+
+            if (string.IsNullOrEmpty(id))
+                return RedirectToAction(nameof(Index));
+
+            var urun = await _apiService.GetAsync<UrunGuncelleModel>($"Urun/{id}");
             if (urun == null)
             {
-                return NotFound("Ürün bulunamadı.");
+                var liste = await _apiService.GetAsync<List<UrunGuncelleModel>>($"Urun/{id}");
+                urun = liste?.FirstOrDefault();
             }
-            return Ok(urun);
-        }
-        [HttpGet("paged")]
-        public async Task<IActionResult> UrunleriFiltreliGetir([FromQuery] UrunFiltreDto filtreDto)
-        {
-            var result = await _urunService.UrunleriFiltreliGetirAsync(filtreDto);
-            return Ok(result);
+
+            if (urun == null)
+                return RedirectToAction(nameof(Index));
+
+            return View(urun);
         }
 
-        // Yeni ürün ekleyen endpoint (POST: api/Urun)
+        // POST: /Urun/Guncelle
         [HttpPost]
-        public async Task<IActionResult> UrunEkle(UrunEkleDto urunEkleDto)
+        public async Task<IActionResult> Guncelle(UrunGuncelleModel model)
         {
-            await _urunService.UrunEkleAsync(urunEkleDto);
-            return Ok("Ürün başarıyla eklendi.");
-        }
+            var token = HttpContext.Session.GetString("AuthToken");
+            if (string.IsNullOrEmpty(token))
+                return RedirectToAction("Login", "Auth");
 
-        // Ürün güncelleyen endpoint (PUT: api/Urun)
-        [HttpPut]
-        public async Task<IActionResult> UrunGuncelle(UrunGuncelleDto urunGuncelleDto)
-        {
-            await _urunService.UrunGuncelleAsync(urunGuncelleDto);
-            return Ok("Ürün başarıyla güncellendi.");
-        }
+            if (!ModelState.IsValid)
+                return View(model);
 
-        // Ürün silen endpoint (DELETE: api/Urun/{id})
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> UrunSil(string id)
+            var (basarili, hata) = await _apiService.PutWithDetailAsync("Urun", model);
+            if (basarili)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            ViewBag.Hata = hata;
+            return View(model);
+        }
+        [HttpGet]
+        public async Task<IActionResult> Sil(string id)
         {
-            await _urunService.UrunSilAsync(id);
-            return Ok("Ürün başarıyla silindi.");
+            var token = HttpContext.Session.GetString("AuthToken");
+            if (string.IsNullOrEmpty(token))
+                return RedirectToAction("Login", "Auth");
+
+            if (!string.IsNullOrEmpty(id))
+            {
+                await _apiService.DeleteWithDetailAsync($"Urun/{id}");
+            }
+
+            return RedirectToAction(nameof(Index));
         }
     }
+
 }
